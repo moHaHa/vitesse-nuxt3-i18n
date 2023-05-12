@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@nuxtjs/color-mode',
     '@vite-pwa/nuxt',
+    '@nuxtjs/i18n',
   ],
 
   experimental: {
@@ -59,5 +60,9 @@ export default defineNuxtConfig({
 
   devtools: {
     enabled: true,
+  },
+  i18n: {
+    /* module options */
+    vueI18n: './i18n.config.ts',
   },
 })
