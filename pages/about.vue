@@ -5,7 +5,7 @@ const online = useOnline()
 <template>
   <div>
     <div>
-      it's just a title    <p>{{ $t('welcome') }}</p>
+      it's just a title -    <p>{{ $t('welcome') }}</p>
     </div>
   </div>
 </template>
