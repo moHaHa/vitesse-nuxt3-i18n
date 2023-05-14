@@ -1,3 +1,7 @@
+
+<p align="center">
+  on top of <code>antfu/vitesse-nuxt3 </code>, here is <code>`mohaha/vitesse-nuxt3-i18n` </code>  
+</p>
 <p align="center">
 <img src="https://user-images.githubusercontent.com/11247099/140462375-7b7ac4db-35b7-453c-8a05-13d8d20282c4.png" width="600"/>
 </p>
