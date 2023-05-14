@@ -1,20 +1,24 @@
 <script setup lang="ts">
-import { appName } from '~/constants'
+const { locale } = useI18n()
 
-useHead({
-  title: appName,
-})
+function toggleLang() {
+  locale.value = locale.value === 'ar' ? 'en' : 'ar'
+}
 </script>
 
 <template>
-  <VitePwaManifest />
-  <NuxtLayout>
-    <NuxtPage />
-  </NuxtLayout>
+  <div>
+    <button class="!outline-none" @click="toggleLang">
+      <div class="i-carbon-language" /> {{ locale }}
+    </button>
+    <p>{{ $t('welcome') }}</p>
+  </div>
 </template>
 
 <style>
-html, body , #__nuxt{
+html,
+body,
+#__nuxt {
   height: 100vh;
   margin: 0;
   padding: 0;
